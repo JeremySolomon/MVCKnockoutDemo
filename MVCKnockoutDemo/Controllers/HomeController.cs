@@ -43,7 +43,7 @@ namespace MVCKnockoutDemo.Controllers
         {
             // TODO: Save logic goes here.
 
-            return Json(new { });
+            return Json(new { Message = $"{viewModel.Name}: {viewModel.Country.Name}"});
         }
 
 

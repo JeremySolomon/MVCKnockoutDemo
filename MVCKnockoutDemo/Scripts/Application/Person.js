@@ -53,7 +53,8 @@
                         // Display loading image
                     },
                     success: function (result) {
-                        // Handle the response here.
+						// Handle the response here.
+						document.cookie = "message=" + result.Message;
                     },
                     complete: function () {
                         // Hide loading image.

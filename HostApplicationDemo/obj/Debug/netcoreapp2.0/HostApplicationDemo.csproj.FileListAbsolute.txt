@@ -1,0 +1,11 @@
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\bin\Debug\netcoreapp2.0\HostApplicationDemo.deps.json
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\bin\Debug\netcoreapp2.0\HostApplicationDemo.runtimeconfig.json
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\bin\Debug\netcoreapp2.0\HostApplicationDemo.runtimeconfig.dev.json
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\bin\Debug\netcoreapp2.0\HostApplicationDemo.dll
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\bin\Debug\netcoreapp2.0\HostApplicationDemo.pdb
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\obj\Debug\netcoreapp2.0\HostApplicationDemo.csprojResolveAssemblyReference.cache
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\obj\Debug\netcoreapp2.0\HostApplicationDemo.csproj.CoreCompileInputs.cache
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\obj\Debug\netcoreapp2.0\HostApplicationDemo.AssemblyInfoInputs.cache
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\obj\Debug\netcoreapp2.0\HostApplicationDemo.AssemblyInfo.cs
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\obj\Debug\netcoreapp2.0\HostApplicationDemo.dll
+C:\Users\rsunderhaus\Documents\GitHub\MVCKnockoutDemo\HostApplicationDemo\obj\Debug\netcoreapp2.0\HostApplicationDemo.pdb
