@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCKnockoutDemo", "MVCKnockoutDemo\MVCKnockoutDemo.csproj", "{EB864301-B96F-451F-83A3-EFE3A6FF474E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostApplicationDemo", "HostApplicationDemo\HostApplicationDemo.csproj", "{D49544D7-69DB-4CF1-957F-0C1E2BFB5DDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EB864301-B96F-451F-83A3-EFE3A6FF474E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB864301-B96F-451F-83A3-EFE3A6FF474E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB864301-B96F-451F-83A3-EFE3A6FF474E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49544D7-69DB-4CF1-957F-0C1E2BFB5DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49544D7-69DB-4CF1-957F-0C1E2BFB5DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49544D7-69DB-4CF1-957F-0C1E2BFB5DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49544D7-69DB-4CF1-957F-0C1E2BFB5DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
