@@ -2,3 +2,6 @@
 .vs/MVCKnockoutDemo/v15/Server/sqlite3/storage.ide
 .vs/MVCKnockoutDemo/v15/Server/sqlite3/storage.ide-shm
 .vs/MVCKnockoutDemo/v15/Server/sqlite3/storage.ide-wal
+.vs/config/applicationhost.config
+MVCKnockoutDemo/obj/Debug/MVCKnockoutDemo.csprojResolveAssemblyReference.cache
+MVCKnockoutDemo/obj/Debug/MVCKnockoutDemo.csproj.CoreCompileInputs.cache
