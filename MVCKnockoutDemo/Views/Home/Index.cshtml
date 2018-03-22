@@ -1,19 +1,100 @@
-﻿<br /><br />
-<label for="emailAddress">Email Address </label><br />
-<input name="emailAddress" type="email" />
+﻿@model MVCKnockoutDemo.ViewModels.PersonViewModel
+@using MVCKnockoutDemo.Helper
+
+@section styles{
+    @Styles.Render("~/Content/themes/base/css")
+    <link href="~/Content/Person.css" rel="stylesheet" />
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryui")
+    <script src="~/Scripts/knockout-3.4.2.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/Application/Person.js"></script>
+    <script type="text/javascript">
+        Person.SaveUrl = '@Url.Action("SavePersonDetails", "Person")';
+        Person.ViewModel = ko.mapping.fromJS(@Html.Raw(Json.Encode(Model)));
+        Person.Countries = @Html.Raw(Json.Encode(ViewBag.Countries)); // This is required because, we are holding the collection in ViewBag. If it is wrapped in ViewModel, this line is not required.
+    </script>
+}
+    <form>
+        <div class="mainWrapper">
+            <table>
+                <tr>
+                    <td>
+                        Id :
+                    </td>
+                    <td>
+                        @Html.ObservableControlFor(model => model.Id, ControlTypeConstants.Html5NumberInput)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Name :
+                    </td>
+                    <td>
+                        @Html.ObservableControlFor(model => model.Name)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date Of Birth :
+                    </td>
+                    <td>
+                        @Html.ObservableControlFor(model => model.DateOfBirth, ControlTypeConstants.JqueryUIDateInput)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country (Id will be assigned):
+                    </td>
+                    <td>
+                        @Html.ObservableControlFor(model => model.CountryId, ControlTypeConstants.DropDownList,
+                              new
+                              {
+                                  data_bind = "options: Person.Countries, optionsCaption: 'Please Choose', optionsText: 'Name', optionsValue: 'Id', value: Person.ViewModel.CountryId"
+                              })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country (Object will be assigned):
+                    </td>
+                    <td>
+                        @Html.ObservableControlFor(model => model.CountryId, ControlTypeConstants.DropDownList,
+                              new
+                              {
+                                  data_bind = "options: Person.Countries, optionsCaption: 'Please Choose', optionsText: 'Name', value: Person.ViewModel.Country"
+                              })
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <br />
+        <label for="emailAddress">Email Address </label><br />
+        <input name="emailAddress" type="email" />
+        <br /><br />
+
+        <label for="password">Password </label><br />
+        <input name="password" type="password" /><br /><br />
+
+
+        <label for="confirmPassword">Confirm Password </label><br />
+        <input name="confirmPassword" type="password" /><br /><br />
+
+
+        <label for="firstName">First Name </label><br />
+        <input name="firstName" type="text" /><br /><br />
+
+
+        <label for="lastName">Last Name</label><br />
+        <input name="lastName" type="text" />
+
+        <input id="Save" type="submit" value="Save" />
+    </form>
 <br /><br />
 
-<label for="password">Password </label><br />
-<input name="password" type="password" /><br /><br />
 
 
-<label for="confirmPassword">Confirm Password </label><br />
-<input name="confirmPassword" type="password" /><br /><br />
 
-
-<label for="firstName">First Name </label><br />
-<input name="firstName" type="text" /><br /><br />
-
-
-<label for="lastName">Last Name</label><br />
-<input name="lastName" type="text" />
