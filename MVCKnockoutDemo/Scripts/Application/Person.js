@@ -54,7 +54,7 @@
                     },
                     success: function (result) {
 						// Handle the response here.
-						document.cookie = "message=" + result.Message;
+						document.cookie = "SavedPerson=" + result.Message;
                     },
                     complete: function () {
                         // Hide loading image.

@@ -1,9 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Saved Results";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<script>
-	alert(document.cookie)
+<header>
+	<h1>Saved Results</h1>
+</header>
+<body>
+	<p><span id="results"></span></p>
+</body>
+
+<script type="text/javascript">
+	window.onload = function () {
+		document.getElementById('results').appendChild(document.createTextNode(document.cookie));
+	}
 </script>
